@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <nav>
+            <h1><a href="index.html">Tasks</a></h1>
+            <div class="search">
+                <input id="find" type="search" name="taskFinder" placeholder="Find task">
+                <button id="pipeline"><a href="./pipeline.html">DOM Pipeline</a></button>
+            </div>
+            <div class="nav-btns">
+                <button id="create">Create Task</button>
+                <div id="dark-mode">
+                    <button id="day"><i class="ri-sun-fill"></i></button>
+                    <button id="night"><i class="ri-moon-clear-fill"></i></button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="task-data">
+            <div class="data-card">
+                <h1>Total Tasks</h1>
+                <p id="total-tasks">0</p>
+            </div>
+            <div class="data-card">
+                <h1>Pending Tasks</h1>
+                <p id="pending-tasks">0</p>
+            </div>
+            <div class="data-card">
+                <h1>Completed Tasks</h1>
+                <p id="completed-tasks">0</p>  
+            </div>
+            <button id="clear-tasks">Clear All Tasks</button>
+        </div>
+
+        <!-- <div class="tasks">
+            <div class="tasks-card">
+                <div class="card-top">
+                    <p>pending</p>
+                    <p>Category</p>
+                </div>
+                <h1>Title</h1>
+                <div class="btns">
+                    <button id="edit">Edit</button>
+                    <button id="complete">Complete</button>
+                    <button id="delete">Delete</button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="form">
+            <div class="form-cancel">
+                <h1>X</h1>
+            </div>
+            <form>
+                <h1>Add Task</h1>
+                <input type="text" placeholder="Title">
+                <div class="category">
+                    <label for="category">Category</label>
+                    <select name="Category" id="category">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="js">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="dsa">DSA</option>
+                    </select>
+                </div>
+                <button type="submit" id="add">Add</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
