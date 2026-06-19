@@ -281,5 +281,8 @@ clearBtn.addEventListener("click", () => {
     } 
 
     renderCard()
+    renderTotalTasks()
+    renderPendingTasks()
+    renderCompletedTasks()
 
 })
